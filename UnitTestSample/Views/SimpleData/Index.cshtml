@@ -1,0 +1,26 @@
+﻿@model List<SimpleDataViewModel>
+@{
+    ViewData["Title"] = "Simple Data Index";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Category</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Title
+                </td>
+                <td>
+                    @item.Category
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
